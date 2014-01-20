@@ -1,0 +1,49 @@
+$menu-width: 			160px;
+.main-header{
+	@extend .cf;
+	@include color-mix($color-primary, white);
+	margin-bottom: $base-spacing-unit * 2;
+	a{
+	}
+	.main-logo{
+		float: left;
+	}
+	.main-menu{
+		float: right;
+		margin-top: em(20);
+		&.is-active{
+			right: 0;
+		}
+	}
+	.mobile-sidebar-button{
+		position: fixed;
+		top: 14px;
+		right: 5px;
+		display: inline-block;
+		&.is-active{
+			right: $menu-width;
+		}
+		@media #{$medium} {
+			display: none;
+		}
+	}
+}
+.main-logo{
+	@include adjust-font-size-to(16px);
+	font-weight: $light-weight;
+	margin: em(16, 20) 0;
+	@media #{$medium} {
+		@include adjust-font-size-to(20px);
+	}
+	img{
+		width: 120px;
+		@media #{$medium} {
+			width: auto;
+		}
+	}
+
+}
+.main-logo-cinema{
+	vertical-align: middle;
+	color: white;
+}

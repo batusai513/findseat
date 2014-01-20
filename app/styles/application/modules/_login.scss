@@ -1,0 +1,22 @@
+.login-area{
+	display: block;
+	@media #{$medium} {
+		display: table;
+	}
+	& > *{
+		display: block;
+		vertical-align: middle;
+		margin-bottom: $half-spacing-unit;
+		@media #{$medium} {
+			display: table-cell;
+		}
+	}
+}
+
+.login-area-or{
+	display: none;
+	text-align: center;
+	@media #{$medium} {
+		display: table-cell;
+	}
+}

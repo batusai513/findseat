@@ -1,0 +1,12 @@
+{
+  "name": "findseat",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "inuitcss": "~5.0.0",
+    "magnific-popup": "~0.9.9",
+    "csswizardry-grids": "~2.2.0"
+  },
+  "devDependencies": {}
+}

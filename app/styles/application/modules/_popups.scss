@@ -1,0 +1,49 @@
+.small-font{
+	@include adjust-font-size-to(14px);
+}
+.popup-white{
+	@include color-mix(white, #A4ACB8);
+}
+.main-popup{
+	@extend .popup-white;
+	position: relative;
+	max-width: em(700);
+	margin: 0 auto;
+	padding: $half-spacing-unit;
+	border-radius: $radius * 2;
+	p{
+		@extend .small-font;
+	}
+	@media #{$medium} {
+		padding: em(43);
+	}
+}
+.main-popup-title{
+	@include adjust-font-size-to(24px);
+	color: $main-foreground-color;
+	margin-bottom: rhythm(2, 24px);
+	&.primary-color{
+		@extend .primary-color;
+	}
+}
+.main-popup-subtitle{
+	@include adjust-leading-to(3, 14px);
+	margin-bottom: rhythm(3, 14px);
+}
+
+.cancel-link{
+	@extend .underline;
+	@extend .small-font;
+}
+
+.button-success + .cancel-link{
+	margin-left: $half-spacing-unit;
+}
+
+.total-value{
+	font-size: 18px !important;
+	font-size: 1rem !important;
+}
+.total-value-val{
+	font-size: em(25, 18);
+}

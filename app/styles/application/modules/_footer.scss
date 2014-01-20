@@ -1,0 +1,30 @@
+.main-footer{
+	@extend .cf;
+	background-color: #D6DADE;
+	text-align: center;
+}
+.footer-social,
+.footer-legal{
+	margin: 5px 0;
+}
+.footer-legal{
+	@include adjust-font-size-to(13px);
+	float: none;
+}
+
+.footer-social{
+	font-size: em(26);
+	float: none;
+}
+
+@media #{$small}{
+	.main-footer{
+		text-align: left;
+	}
+	.footer-social{
+		float: right;
+	}
+	.footer-legal{
+		float: left;
+	}
+}

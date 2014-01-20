@@ -1,0 +1,134 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>findseat</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css styles/vendor.css -->
+		<!-- bower:css -->
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/application.css">
+		<!-- endbuild -->
+		<script src="bower_components/modernizr/modernizr.js"></script>
+
+	</head>
+	<body>
+		<!--[if lt IE 10]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<header class="main-header">
+			<div class="wrapper">
+				<h1 class="main-logo">
+					<a href="/"><img src="images/logo.svg" alt=""> <span class="main-logo-cinema">| Cineland</span></a>
+				</h1>
+				<a href="#" class="mobile-sidebar-button js-sidebar-btn"><span></span></a>
+				<nav class="main-menu">
+					<ul class="main-menu-list">
+						<li class="main-menu-item">
+							<a href="#">Sobre nosotros</a>
+						</li>
+						<li class="main-menu-item">
+							<a href="#">Cines aliados</a>
+						</li>
+						<li class="main-menu-item">
+							<a href="#">Contacto</a>
+						</li>
+						<li class="main-menu-item dropdown main-menu-toggle js-menu-toggle">
+							<img src="images/user-dummy.svg" alt="user dummy image" class="user-image">
+							<a href="#" class="user-name"><b>Blopa </b><span>▾</span></a>
+							<div class="dropdown_drop main-menu-options-toggle js-options-toggle" role="menu navigation">
+								<ul class="nav nav--stacked flush--bottom">
+									<li class=" main-menu-options-item" role="menuitem"><a href="#">Salir</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="wrapper">
+			<h2>Boletas Activas</h2>
+
+			<ul class="tickets nav nav--stacked">
+				<li>
+					<div class="grid">
+						<div class="grid__item large--five-sixths">
+							<div class="ticket-wrapper push-half--bottom">
+								<div class="ticket">
+									<div class="ticket-side ticket-code">
+										<img src="images/extra/code.jpg" alt="">
+									</div>
+									<div class="ticket-side ticket-body">
+										<h3 class="gamma push-half--bottom">LOS JUEGOS DEL HAMBRE: EN LLAMAS (2D y 35 MM)</h3>
+										<div class="grid">
+											<div class="grid__item one-whole large--one-half">
+												<p class="semi ticket-info">
+													Silla: <span class="label label-secondary">J-16, J-17</span> <br>
+													Cineland Panorama <br>
+													<i class="icon-calendar"></i> Jueves 18 de Diciembre <br>
+													<i class="icon-clock"></i> 9:30pm
+												</p>
+											</div><div class="grid__item one-whole large--one-half">
+												<dl class="small-font tickey-data-extra">
+													<dt>Cantidad: </dt>
+													<dd>2 Boletas</dd>
+													<dt>Valor Total <br> de la Compra: </dt>
+													<dd>$27.900</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div><div class="grid__item large--one-sixth">
+							<a href="#" class="pill button-xsmall">
+								<i class="pill-icon icon-print"></i>
+								<span>Imprimir</span>
+							</a>
+							<a href="#" class="pill button-xsmall">
+								<i class="pill-icon icon-mail-alt"></i>
+								<span>Enviar</span>
+							</a>
+							<a href="#" class="pill button-xsmall">
+								<i class="pill-icon icon-download"></i>
+								<span>Descargar</span>
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- build:js scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/jquery.js"></script>
+		<script src="bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+
+		<!-- build:js scripts/main.js -->
+		<script src="scripts/dropdown.js"></script>
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
+</body>
+</html>

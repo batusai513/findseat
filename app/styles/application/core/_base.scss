@@ -1,0 +1,34 @@
+@include establish-baseline;
+body,
+html{
+	height: 100%;
+}
+html{
+	@include adjust-leading-to(4);
+	overflow-y:scroll;
+    min-height:100%;
+    overflow-x: hidden;
+}
+body{
+	@include color-mix($main-background-color ,$main-foreground-color);
+	font-family: $sans-font-family;
+	font-weight: $regular-weight;
+}
+
+a{
+	color: #7F8C99;
+	text-decoration: none;
+	transition: color 0.2s linear;
+}
+
+img{
+	vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: $semi-weight;
+}
+
+h3, .gamma{
+	@include adjust-font-size-to(20px);
+}

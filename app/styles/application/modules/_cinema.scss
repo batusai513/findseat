@@ -1,0 +1,91 @@
+.cinema-container{
+	overflow-x: auto;
+	width: 100%;
+}
+.cinema-table{
+	border-collapse: separate;
+	border-spacing: em(6);
+	table-layout: fixed;
+	font-size: em(14);
+	td, th{
+		padding: 0;
+
+	}
+	td{
+		text-align: center;
+	}
+	th{
+		width: em(16);
+		text-transform: uppercase;
+	}
+	label{
+		display: inline-block;
+		font-size: inherit;
+	}
+	@media screen and (max-width: #{$small-screen}){
+		border-spacing: 1px;
+		table-layout: auto;
+	}
+	@media #{$medium} {
+		font-size: em($font-size);
+	}
+}
+
+.cinema-seat{
+	@include size(em(40, 18));
+	line-height: 2;
+	border: 2px solid $color-secondary;
+	border-radius: $radius;
+	display: inline-block;
+	text-align: center;
+	user-select: none;
+	&.checked{
+		background-color: $color-success;
+		border-color: $color-success;
+		color: white;
+	}
+	&.disabled{
+		@include opacity(0.20);
+		cursor: not-allowed;
+	}
+	@media screen and (max-width: #{$small-screen}){
+		background-color: $color-secondary;
+		color: white;
+		font-size: em(13);
+		border-radius: 50%;
+		line-height: 1.8;
+
+	}
+}
+.cinema-check{
+	@extend .visuallyhidden;
+	&:checked + .cinema-seat{
+		@extend .cinema-seat.checked;
+	}
+	&:disabled + .cinema-seat{
+		@extend .cinema-seat.disabled;
+	}
+}
+
+.cinema-legends{
+	@include adjust-font-size-to(12px);
+	font-weight: $semi-weight;
+}
+
+.cinema-legends-state{
+	&:after{
+		content: "\25CF";
+		font-size: em(14, 12);
+		margin:0 em(27) 0 em(13);
+	}
+	&.ocupado{
+		&:after{
+			color: $light-blue;
+		}
+	}
+	&.seleccionado{
+		&:after{
+			color: $color-success;
+		}
+	}
+}

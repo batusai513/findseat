@@ -1,0 +1,11 @@
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-rigth{text-align: right;}
+.uppercase{text-transform: uppercase;}
+.underline{text-decoration: underline;}
+.primary-color{color: $color-primary;}
+.semi{font-weight: $semi-weight;}
+@mixin color-mix($bg, $fg) {
+	background-color: $bg;
+	color: $fg;
+}

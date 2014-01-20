@@ -1,0 +1,80 @@
+//Colors
+
+$orange: 					#FD5737;
+$green: 					#72C564;
+$blue: 						#66798C;
+$light-blue: 				lighten($blue, 40%);
+$grey: 						#999999;
+$light-grey: 				#DBE2EA;
+
+
+$main-background-color: 	#F2F2F2;
+$main-foreground-color: 	$blue;
+$color-ui: 					#DBE2EA;
+
+$color-primary: 			$orange;
+$color-success: 			$green;
+$color-secondary: 			$blue;
+
+
+
+$sans-font-family: 			'open-sans';
+$light-weight: 				300;
+$regular-weight: 			400;
+$semi-weight: 				600;
+$bold-weight: 				700;
+
+$font-size: 				18;
+$base-font-size: 			($font-size * 1px);
+$base-line-height: 			(($font-size * 1.5 / 4) * 1px);
+$em-base: 					$font-size;
+
+
+//others
+
+$radius: 					4px;
+
+
+
+$base-spacing-unit: 		$base-line-height * 4!default;
+$half-spacing-unit: 		$base-spacing-unit / 2!default;
+$line-height-ratio: 		$base-line-height / $base-font-size;
+
+
+// Media Queries
+// --------------------------------------------------
+
+//general widths used for media queries
+
+// Media Queries
+
+$small-screen:                480px!default;
+$medium-screen:               768px!default;
+$large-screen:                1024px!default;
+$extra-large-screen:          1280px!default;
+
+$screen:                      "only screen";
+$small:                       "only screen and (min-width: #{$small-screen})";
+$medium:                      "only screen and (min-width: #{$medium-screen})";
+$large:                       "only screen and (min-width: #{$large-screen})";
+$landscape:                   "only screen and (orientation: landscape)";
+$portrait:                    "only screen and (orientation: portrait)";
+
+
+/*
+  csswizardry grid defaults overide
+  FOR THIS GRID IF YOU NEED THE GRID ITEMS HTML TO BE SPACELESS, IN HAML USING '>' AT THE END OF THE TAG
+*/
+
+$gutter:                24px!default;
+
+$breakpoints: (
+    'extra' '(min-width: #{$extra-large-screen})',
+    'large' '(min-width: #{$large-screen})',
+    'medium' '(min-width: #{$medium-screen})',
+    'small' '(min-width: #{$small-screen})'
+)!default;
+
+$breakpoint-has-widths: ('small', 'medium', 'large', 'extra')!default;
+$breakpoint-has-push:   ('small', 'medium', 'large', 'extra')!default;
+$breakpoint-has-pull:   ('small', 'medium', 'large', 'extra')!default;

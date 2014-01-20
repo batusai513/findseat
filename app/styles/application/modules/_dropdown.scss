@@ -1,0 +1,11 @@
+.dropdown{
+	position: relative;
+}
+.dropdown_drop{
+	position: absolute;
+	width: 100%;
+	display: none;
+	&[data-state="open"]{
+		display: block;
+	}
+}

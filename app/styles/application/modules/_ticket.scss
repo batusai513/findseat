@@ -1,0 +1,72 @@
+.ticket-wrapper{
+	background-color: white;
+	border-radius: $radius * 2;
+	overflow: hidden;
+}
+.ticket{
+	display: block;
+}
+.ticket-side{
+	display: block;
+	vertical-align: middle;
+}
+.ticket-code{
+	text-align: center;
+	padding: 20px;
+	width: auto;
+	img{
+		width: auto;
+	}
+}
+.ticket-body{
+	border-width: 1px 0 0 0;
+	border-color: $color-ui;
+	border-style: dashed;
+	padding: 20px;
+}
+
+.ticket-info{
+	font-size: em(14);
+	@include adjust-leading-to(5);
+	margin-bottom: 0;
+}
+
+.tickey-data-extra{
+	font-weight: $semi-weight;
+	dt, dd{
+		//display: inline-block;
+	}
+	dt{
+		width: 95px;
+		float: left;
+		margin-right: 6px;
+	}
+	dd{
+		margin-left: 0;
+		overflow: hidden;
+		font-size: em(26, 14);
+		margin-bottom: 12px;
+		font-weight: $bold-weight;
+	}
+}
+
+@media #{$medium} {
+	.ticket{
+		display: table;
+	}
+	.ticket-side{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.ticket-body{
+		border-width: 0 0 0 1px;
+		padding: 24px 30px;
+	}
+	.ticket-code{
+		width: 210px;
+		padding: 39px;
+		img{
+			width: 148px;
+		}
+	}
+}

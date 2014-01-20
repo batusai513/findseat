@@ -1,0 +1,83 @@
+label{
+	@include adjust-font-size-to(14px);
+	font-weight: $semi-weight;
+	margin-bottom: rhythm(1, 14px);
+	color: $main-foreground-color;
+}
+
+%input-text-base{
+	width: 100%;
+	height: em(43);
+	border: 2px solid $color-ui;
+	font-weight: $light-weight;
+	color: $main-foreground-color;
+	border-radius: $radius;	
+}
+
+[class*="grid__"] select{
+	@extend %input-text-base;
+}
+
+#{$all-text-inputs}{
+	@extend %input-text-base;
+	padding: 0 em(12);
+}
+
+%fake-input-base{
+	@include size(em(15, 13));
+	display: inline-block;
+	border: 2px solid $color-ui;
+	color: $color-success;
+	vertical-align: middle;
+	margin-top: -3px;
+	margin-right: 4px;
+	text-align: center;
+	position: relative;
+	&:before{
+		font-size: em(16, 13);
+		position: absolute;
+		top: em(5, 16);
+		left: em(1, 16);
+		line-height: 0;
+	}
+}
+
+.fake-input{
+	font-size: 13px;
+	user-select: none;
+}
+
+.fake-input-checkbox{
+	@extend %fake-input-base;
+	border-radius: $radius;
+}
+
+.fake-input-radio{
+	@extend %fake-input-base;
+	border-radius: 50%;
+	&:before{
+		top: em(4, 16);
+		left: em(-1, 16);
+	}
+}
+
+.fake-input-input{
+	@extend .visuallyhidden;
+	&:checked + .fake-input-checkbox:before{
+		content: "×";
+	}
+	&:checked + .fake-input-radio:before{
+		content: "●";
+	}
+}
+
+.label{
+	display: inline-block;
+	padding: 0.3em 0.4em;
+	line-height: 1.2;
+	border-radius: $radius;
+}
+.label-secondary{
+	background-color: $color-secondary;
+	color: white;
+}
