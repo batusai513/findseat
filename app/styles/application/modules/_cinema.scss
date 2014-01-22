@@ -75,8 +75,8 @@
 .cinema-legends-state{
 	&:after{
 		content: "\25CF";
-		font-size: em(14, 12);
-		margin:0 em(27) 0 em(13);
+		font-size: em(16, 12);
+		margin:0 em(24) 0 em(10);
 	}
 	&.ocupado{
 		&:after{

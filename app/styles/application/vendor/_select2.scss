@@ -1,0 +1,86 @@
+.select2-container{
+	.select2-choice{
+		background: white;
+		border: 2px solid $color-ui;
+		height: 43px;
+		line-height: 38px;
+		color: $main-foreground-color;
+		font-weight: $light-weight;
+		.select2-arrow{
+			background: white;
+			border: 0;
+			width: 22px;
+			b{
+				@include position(absolute, 0px 0px 0px 0px);
+				@include transform(translateY(4px));
+				margin: auto;
+				background-image: none;
+				width: 0;
+				height: 0;
+				border-color: $color-primary transparent transparent transparent;
+				border-width: 4px;
+				border-style: solid;
+			}
+		}
+	}
+}
+.select2-drop-active{
+	border-width: 2px;
+	border-color: $color-ui;
+	box-shadow: none;
+}
+.select2-search{
+	margin: 3px 0;
+	input{
+		font-weight: $light-weight;
+		font-family: $sans-font-family;
+		font-size: .8em;
+	}
+}
+.select2-results{
+	font-weight: $light-weight;
+	font-size: .9em;
+	padding: 0;
+	margin: 0;
+	li:last-child{
+		border-radius: 0 0 $radius $radius;
+	}
+	.select2-highlighted{
+		background: $color-primary;
+	}
+}
+
+.ui-widget{
+	font-size: em(13);
+	font-weight: $light-weight;
+	font-family: $sans-font-family;
+}
+
+.ui-widget-header{
+	background: $color-primary;
+	color: white;
+	font-weight: $semi-weight;
+	border: 2px solid white;
+}
+.ui-widget-content{
+	background: white;
+}
+
+.ui-state-default{
+	background-color: #f9f9f9;
+}
+.ui-state-hover{
+	background-color: lighten($color-primary, 5%);
+	color: white;
+}
+.ui-state-focus{}
+.ui-state-active{
+	background-color: $color-primary;
+	color: white;
+}
+
+.ui-datepicker{
+	padding: 0;
+}
+.ui-datepicker-calendar{
+}

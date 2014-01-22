@@ -5,6 +5,7 @@
 .underline{text-decoration: underline;}
 .primary-color{color: $color-primary;}
 .semi{font-weight: $semi-weight;}
+.valign-middle{vertical-align: middle;}
 @mixin color-mix($bg, $fg) {
 	background-color: $bg;
 	color: $fg;

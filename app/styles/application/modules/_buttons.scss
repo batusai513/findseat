@@ -127,11 +127,11 @@
 	text-shadow: 0 1px rgba(white, 0.40);
 	span{
 		font-weight: $semi-weight;
-	@media screen and (max-width: $small-screen) {
+	@media screen and (max-width: $medium-screen) {
 		display: none;
 	}
 	}
-	@media screen and (max-width: $small-screen) {
+	@media screen and (max-width: $medium-screen) {
 		min-width: 0;
 	}
 }
@@ -143,7 +143,7 @@
 	display: inline-block;
 	line-height: 3;
 	margin-right: 3px;
-	@media screen and (max-width: $small-screen) {
+	@media screen and (max-width: $medium-screen) {
 		margin-right: 0;
 	}
 }

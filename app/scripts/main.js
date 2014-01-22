@@ -49,3 +49,10 @@ $('.js-sidebar-btn').on('click', function(e){
 	menu.toggleClass('is-active');
 	e.preventDefault();
 });
+
+$('select').select2();
+$('#date').datepicker({
+	dateFormat: "DD, d MM, yy",
+	dayNames: [ "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" ],
+	monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ]
+})

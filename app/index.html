@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width">
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<!-- build:css styles/vendor.css -->
+		<link rel="stylesheet" href="bower_components/select2/select2.css">
+		<link rel="stylesheet" href="bower_components/jqueryui/themes/base/jquery.ui.core.css">
+		<link rel="stylesheet" href="bower_components/jqueryui/themes/base/jquery.ui.datepicker.css">
 		<!-- bower:css -->
 		<!-- endbower -->
 		<!-- endbuild -->
@@ -66,26 +69,24 @@
 					<div class="grid function-show-data">
 						<div class="grid__item medium--one-quarter one-whole">
 							<label for="">Ciudad</label>
-							<select name="" id="">
+							<select name="" id="" style="width: 100%;">
 								<option value="">Barranquilla</option>
+								<option value="">Cartagena</option>
+								<option value="">Santa Marta</option>
 							</select>
 						</div><div class="grid__item medium--one-half one-whole">
 							<label for="">Día</label>
-							<input type="date">
+							<input id="date" type="text">
 						</div><div class="grid__item medium--one-quarter one-whole">
 							<label for="">Hora</label>
-							<input type="time">  
+							<select name="" id="" style="width: 100%;">
+								<option value="">09:30 pm</option>
+							</select>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<p>
-				valor servicio: <b class="push-half--right">$5.400</b>
-				<a href="#" class="button-success js-login-popup">Continuar</a>
-			</p>
-
-			<div class="rule push-half--bottom"></div>
 			<p class="cinema-legends"><span class="cinema-legends-state ocupado">Ocupados</span> <span class="cinema-legends-state libre">Libres</span> <span class="cinema-legends-state seleccionado">Seleccionados</span> </p>
 			<div class="cinema-container">
 				<table cellpadding="0" border="0" class="cinema-table">
@@ -1146,7 +1147,19 @@
 			</div>
 
 			<div class="rule push-half--bottom"></div>
-			<p class="text-center uppercase">Pantalla</p>
+			<p class="text-center uppercase push-half--bottom">Pantalla</p>
+			<div class="rule push--bottom"></div>
+
+			<div class="grid push--bottom">
+				<div class="grid__item medium--one-half valign-middle">
+					<p>El valor de el servicio se cobra por boleta.</p>	
+				</div><div class="grid__item medium--one-half text-rigth valign-middle">
+					<p>
+						valor servicio: <b class="push-half--right">$5.400</b>
+						<a href="#" class="button-success button-small js-login-popup">Continuar</a>
+					</p>
+				</div>
+			</div>
 
 		</div>
 		<footer class="main-footer">
@@ -1282,6 +1295,9 @@
 		<!-- build:js scripts/vendor.js -->
 		<!-- bower:js -->
 		<script src="bower_components/jquery/jquery.js"></script>
+		<script src="bower_components/jqueryui/ui/jquery.ui.core.js"></script>
+		<script src="bower_components/jqueryui/ui/jquery.ui.datepicker.js"></script>
+		<script src="bower_components/select2/select2.js"></script>
 		<script src="bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->

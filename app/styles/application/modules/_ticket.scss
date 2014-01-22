@@ -1,7 +1,11 @@
 .ticket-wrapper{
 	background-color: white;
 	border-radius: $radius * 2;
-	overflow: hidden;
+	box-shadow: 1px 1px 3px rgba(black, 0.20);
+	@media screen and (max-width: $medium-screen){
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
 }
 .ticket{
 	display: block;
@@ -14,15 +18,49 @@
 	text-align: center;
 	padding: 20px;
 	width: auto;
+	position: relative;
+	&:after,
+	&:before{
+		content: "";
+		display: block;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		background: #f2f2f2;
+		border-radius: 50%;
+		right: -5px;
+	}
+	&:after{
+		bottom: -5px;
+		box-shadow: inset 1px 0 0px rgba(0,0,0,0.2);
+		@media #{$medium}{
+			box-shadow: inset 0 1px 0px rgba(0,0,0,0.2);
+		}
+	}
+	&:before{
+		left: -5px;
+		bottom: -5px;
+		box-shadow: inset -1px 0 0px rgba(0,0,0,0.2);
+		@media #{$medium}{
+			top: -5px;
+			right: -5px;
+			left: auto;
+			box-shadow: inset 0 -1px 0px rgba(0,0,0,0.2);
+		}
+	}
 	img{
 		width: auto;
 	}
+
 }
 .ticket-body{
 	border-width: 1px 0 0 0;
 	border-color: $color-ui;
 	border-style: dashed;
 	padding: 20px;
+	@media #{$medium} {
+		border-width: 0 0 0 1px;
+	}
 }
 
 .ticket-info{
@@ -31,8 +69,14 @@
 	margin-bottom: 0;
 }
 
-.tickey-data-extra{
+.ticket-data-extra{
+	@include adjust-font-size-to(14px);
 	font-weight: $semi-weight;
+	margin: 23px 0 0;
+	display: none;
+	@media #{$medium} {
+		display: block;
+	}
 	dt, dd{
 		//display: inline-block;
 	}
@@ -47,6 +91,37 @@
 		font-size: em(26, 14);
 		margin-bottom: 12px;
 		font-weight: $bold-weight;
+		span{
+			font-size: em(18, 26);
+		}
+	}
+}
+.ticket-data-extra-value{
+	margin-top: 27px;
+}
+
+.ticket-actions{
+	@media screen and (max-width: $medium-screen){
+		background-color: white;
+		padding: 10px 20px;
+		border-radius: 0 0 $radius $radius;
+		box-shadow: 1px 1px 3px rgba(black, 0.20);
+		border-top: 1px solid $color-ui;
+	}
+	
+}
+
+.ticket-actions-info{
+	display: inline-block;
+	@media #{$medium} {
+		display: none;
+	}
+}
+
+.pill-print{
+	display: none;
+	@media #{$medium} {
+		display: inline-block;
 	}
 }
 

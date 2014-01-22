@@ -10,7 +10,7 @@ $menu-width: 			160px;
 	}
 	.main-menu{
 		float: right;
-		margin-top: em(20);
+		margin-top: em(18);
 		&.is-active{
 			right: 0;
 		}
@@ -30,7 +30,7 @@ $menu-width: 			160px;
 }
 .main-logo{
 	@include adjust-font-size-to(16px);
-	font-weight: $light-weight;
+	font-weight: $regular-weight;
 	margin: em(16, 20) 0;
 	@media #{$medium} {
 		@include adjust-font-size-to(20px);
@@ -44,6 +44,6 @@ $menu-width: 			160px;
 
 }
 .main-logo-cinema{
-	vertical-align: middle;
+	vertical-align: em(-4, 20);
 	color: white;
 }
