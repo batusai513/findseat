@@ -9,7 +9,6 @@
 	font-size: em(14);
 	td, th{
 		padding: 0;
-
 	}
 	td{
 		text-align: center;
@@ -23,7 +22,7 @@
 		font-size: inherit;
 	}
 	@media screen and (max-width: #{$small-screen}){
-		border-spacing: 1px;
+		border-spacing: 2px;
 		table-layout: auto;
 	}
 	@media #{$medium} {
@@ -53,8 +52,8 @@
 		color: white;
 		font-size: em(13);
 		border-radius: 50%;
-		line-height: 1.8;
-
+		line-height: 2;
+		margin: 0 1px;
 	}
 }
 .cinema-check{
@@ -70,6 +69,18 @@
 .cinema-legends{
 	@include adjust-font-size-to(12px);
 	font-weight: $semi-weight;
+}
+
+.cinema-screen{
+	border-color: $color-ui;
+	border-width: 1px 0;
+	border-style: solid;
+	padding: 6px 0;
+	text-align: center;
+	text-transform: uppercase;
+	@media #{$medium} {
+		padding: 12px 0;
+	}
 }
 
 .cinema-legends-state{

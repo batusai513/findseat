@@ -13,17 +13,20 @@
 .function-show-paper{
 	@extend .media__img;
 	margin-bottom: 0;
-	width: 120px;
+	width: 100px;
 	@media screen and (max-width: #{$medium-screen}){
 		margin-right: $half-spacing-unit;
 	}
+}
+.function-show-data{
+	padding-bottom: 3px;
 }
 .function-show-body{
 	@extend .media__body;
 	padding: 0;
 }
 .function-show-title{
-	@include adjust-font-size-to(20px);
+	@include adjust-font-size-to(16px);
 	font-weight: $semi-weight;
 	margin-bottom: rhythm(2, 20px);
 }
@@ -47,5 +50,6 @@
 	}
 	.function-show-title{
 		margin-bottom: rhythm(4, 20px);
+		@include adjust-font-size-to(20px);
 	}
 }

@@ -1,7 +1,7 @@
 label{
 	@include adjust-font-size-to(14px);
 	font-weight: $semi-weight;
-	margin-bottom: rhythm(1, 14px);
+	margin-bottom: rhythm(1/2, 14px);
 	color: $main-foreground-color;
 }
 
@@ -11,7 +11,11 @@ label{
 	border: 2px solid $color-ui;
 	font-weight: $light-weight;
 	color: $main-foreground-color;
-	border-radius: $radius;	
+	border-radius: $radius;
+	margin-bottom: 6px;
+	@media #{$medium} {
+		margin-bottom: auto;
+	}
 }
 
 [class*="grid__"] select{

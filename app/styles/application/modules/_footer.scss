@@ -17,14 +17,21 @@
 	float: none;
 }
 
-@media #{$small}{
+@each $var in $social-colors {
+	$social: nth($var, 1);
+	$color: nth($var, 2);
+	.icon-#{$social} {
+		&:hover{
+			color: $color;
+		}
+	}
+}
+
+@media #{$medium}{
 	.main-footer{
 		text-align: left;
 	}
 	.footer-social{
 		float: right;
-	}
-	.footer-legal{
-		float: left;
 	}
 }

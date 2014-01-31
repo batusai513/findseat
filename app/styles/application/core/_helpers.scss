@@ -6,6 +6,7 @@
 .primary-color{color: $color-primary;}
 .semi{font-weight: $semi-weight;}
 .valign-middle{vertical-align: middle;}
+.main-popup .rule{color: #F0F0F0;}
 @mixin color-mix($bg, $fg) {
 	background-color: $bg;
 	color: $fg;

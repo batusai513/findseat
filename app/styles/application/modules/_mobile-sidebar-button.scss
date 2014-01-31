@@ -1,7 +1,5 @@
 .mobile-sidebar-button{
 	@include transition(all 0.2s ease-out);
-	//background: #000;
-	//background: rgba(0,0,0,0.9);
 	font-size: 10px;
 	width: auto;
 	height: auto;
@@ -30,15 +28,4 @@
 			margin-top: .8em;
 		}
 	}
-	//&.is-active{
-	//	span{
-	//		background: transparent;
-	//		&:after{
-	//			@include transform(rotate(45deg) translate(em(-4, 10), em(-5, 10)));
-	//		}
-	//		&:before{
-	//			@include transform(rotate(-45deg) translate(em(-4, 10), em(4, 10)));
-	//		}
-	//	}
-	//}
 }

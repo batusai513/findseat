@@ -30,6 +30,13 @@ $base-line-height: 			(($font-size * 1.5 / 4) * 1px);
 $em-base: 					$font-size;
 
 
+$color-facebook: 			#3b5998;
+$color-instragam: 			#3f729b;
+$color-twitter: 			#00a0d1;
+$color-mail: 				#fff;
+
+$social-colors: 			("facebook" $color-facebook, "instagram" $color-instragam, "twitter" $color-twitter, "mail" $color-mail);
+
 //others
 
 $radius: 					4px;
