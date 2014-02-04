@@ -25,6 +25,12 @@ label{
 #{$all-text-inputs}{
 	@extend %input-text-base;
 	padding: 0 em(12);
+	&.arrow{
+		@include retina-image("../images/arrow", 7px 4px);
+		background-repeat: no-repeat;
+		background-position: 95% center;
+		padding-right: 8%;
+	}
 }
 
 %fake-input-base{

@@ -30,7 +30,7 @@
 		<header class="main-header">
 			<div class="wrapper">
 				<h1 class="main-logo">
-					<a href="/"><img src="images/logo.svg" alt=""> <span class="main-logo-cinema">| Cineland</span></a>
+					<a href="/"><img src="images/logo.svg" alt=""> <span class="main-logo-cinema"><span class="line">|</span> Cineland</span></a>
 				</h1>
 				<a href="#" class="mobile-sidebar-button js-sidebar-btn"><span></span></a>
 				<nav class="main-menu">
@@ -38,13 +38,13 @@
 						<li class="main-menu-item">
 							<a href="#">Sobre nosotros</a>
 						</li>
-						<li class="main-menu-item">
+						<!-- <li class="main-menu-item">
 							<a href="#">Cines aliados</a>
-						</li>
+						</li> -->
 						<li class="main-menu-item">
 							<a href="#">Contacto</a>
 						</li>
-						<li class="main-menu-item dropdown main-menu-toggle js-menu-toggle">
+						<li class="main-menu-item dropdown main-menu-toggle js-menu-toggle nav__item--line">
 							<img src="images/user-dummy.svg" alt="user dummy image" class="user-image">
 							<a href="#" class="user-name"><b>Blopa </b><span>▾</span></a>
 							<div class="dropdown_drop main-menu-options-toggle js-options-toggle" role="menu navigation">
@@ -69,17 +69,17 @@
 					<div class="grid function-show-data">
 						<div class="grid__item medium--one-quarter">
 							<label for="">Ciudad</label>
-							<select name="" id="" style="width: 100%;">
+							<select name="" id="" style="width: 100%;" class="select">
 								<option value="">Barranquilla</option>
 								<option value="">Cartagena</option>
 								<option value="">Santa Marta</option>
 							</select>
 						</div><div class="grid__item one-half">
 							<label for="">Día</label>
-							<input id="date" type="text">
+							<input id="date" type="text" class="arrow">
 						</div><div class="grid__item medium--one-quarter one-half">
 							<label for="">Hora</label>
-							<select name="" id="" style="width: 100%;">
+							<select name="" id="" style="width: 100%;" class="select">
 								<option value="">09:30 pm</option>
 							</select>
 						</div>
@@ -1204,7 +1204,7 @@
 						<input type="checkbox" class="fake-input-input" id="remember_me" /> 
 						<span class="fake-input-checkbox"></span>Recordarme
 					</label>
-					<input type="submit" value="Continuar" class="button-success button-small">
+					<input type="submit" value="Continuar" class="button-success button-small js-pago">
 					<a href="#" class="cancel-link">Cancelar</a>
 			  </div>
 			</form>
@@ -1260,17 +1260,37 @@
 							</div>
 						</div>
 
-						<div class="grid">
+						<div class="grid grid--narrow">
 							<div class="grid__item one-whole small--one-half">
 								<label for="">Fecha de expiración</label>
-								<div class="grid">
+								<div class="grid grid--narrow">
 									<div class="grid__item one-half">
-										<select name="" id="">
+										<select name="" id="" style="width: 100%;" class="select--without">
 											<option value="">Mes</option>
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+											<option value="">5</option>
+											<option value="">6</option>
+											<option value="">7</option>
+											<option value="">8</option>
+											<option value="">9</option>
+											<option value="">10</option>
+											<option value="">11</option>
+											<option value="">12</option>
 										</select>
 									</div><div class="grid__item one-half">
-										<select name="" id="">
+										<select name="" id="" style="width: 100%;" class="select--without">
 											<option value="">Año</option>
+											<option value="">2015</option>
+											<option value="">2016</option>
+											<option value="">2017</option>
+											<option value="">2018</option>
+											<option value="">2019</option>
+											<option value="">2020</option>
+											<option value="">2021</option>
+											<option value="">2022</option>
 										</select>
 									</div>
 								</div>

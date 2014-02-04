@@ -50,9 +50,24 @@ $('.js-sidebar-btn').on('click', function(e){
 	e.preventDefault();
 });
 
-$('select').select2();
+$('.select').select2();
+
+$('.select--without').select2({
+	minimumResultsForSearch: -1
+});
+
 $('#date').datepicker({
 	dateFormat: "DD, d MM, yy",
 	dayNames: [ "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" ],
 	monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ]
+})
+
+$('.js-pago').closest('form').on('submit', function(e){
+	e.preventDefault();
+	$.magnificPopup.open({
+		items:{
+			src: '#payments-popup',
+			type: 'inline'
+		}
+	})
 })

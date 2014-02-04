@@ -13,7 +13,7 @@
 		.select2-arrow{
 			background: white;
 			border: 0;
-			width: 22px;
+			width: 40px;
 			b{
 				@include position(absolute, 0px 0px 0px 0px);
 				@include transform(translateY(4px));

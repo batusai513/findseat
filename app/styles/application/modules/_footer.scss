@@ -1,6 +1,6 @@
 .main-footer{
 	@extend .cf;
-	background-color: #D6DADE;
+	background-color: #ECEDEE;
 	text-align: center;
 }
 .footer-social,
@@ -15,6 +15,9 @@
 .footer-social{
 	font-size: em(26);
 	float: none;
+	a{
+		color: #C5CBCD;
+	}
 }
 
 @each $var in $social-colors {

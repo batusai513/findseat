@@ -2,6 +2,7 @@ $menu-width: 			160px;
 
 .main-menu{
 	@include transition(all 0.2s ease-out);
+	font-weight: $light-weight;
 	@media screen and (max-width: $medium-screen) {
 		background-color: $main-foreground-color;
 		position: fixed;
@@ -68,9 +69,28 @@ $menu-width: 			160px;
 
 .user-image{
 	@include size(50px);
-	border: 4px solid red;
+	border: 3px solid #DC5026;
 	border-radius: 50%;
 }
 .user-name{
 	@include adjust-font-size-to(14px);
+}
+
+.nav__item--line{
+	&:before{
+		content: "";
+		height: 20px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 5px;
+		width: 1px;
+		background: white;
+		background: rgba(white, 0.5);
+	}
+}
+
+.line{
+	color: rgba(white, 0.5);
+	font-weight: 300;
+	vertical-align: 2px;
 }
