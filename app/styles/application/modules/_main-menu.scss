@@ -1,10 +1,10 @@
-$menu-width: 			160px;
+$menu-width: 			260px;
 
 .main-menu{
-	@include transition(all 0.2s ease-out);
+	@include transition(right 0.2s ease-out);
 	font-weight: $light-weight;
 	@media screen and (max-width: $medium-screen) {
-		background-color: $main-foreground-color;
+		background-color: #2A313D;
 		position: fixed;
 		right: $menu-width * -1;
 		top: 0;
@@ -21,16 +21,31 @@ $menu-width: 			160px;
 .main-menu-item{
 	margin: 0 em(4);
 	padding: 0 em(4);
+	position: relative;
 	@media screen and (max-width: 860px) {
 		font-size: em(16);
-		margin: 0 em(2, 16);
-		padding: 0 em(2, 16);
+		margin: 0;
+		padding: 0;
 	}
 	@media screen and (max-width: $medium-screen) {
 		display: block !important;
-		padding: 5px 0;
-		border: 1px solid #ccc;
-		border-width: 1px 0 0;
+		padding: 10px 25px;
+		border-top-color: #1E232C;
+		border-width:1px 0 1px;
+		border-style: solid;
+		border-bottom-color: #384152;
+		&:first-child{
+			border-top-width: 0;
+		}
+		&:nth-child(3):after{
+			content:"";
+			display: block;
+			position: absolute;
+			border-bottom: 1px solid #1E232C;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
 	}
 	& > a{
 		color: white;
