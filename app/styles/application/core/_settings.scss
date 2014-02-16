@@ -85,3 +85,28 @@ $breakpoints: (
 $breakpoint-has-widths: ('small', 'medium', 'large', 'extra')!default;
 $breakpoint-has-push:   ('small', 'medium', 'large', 'extra')!default;
 $breakpoint-has-pull:   ('small', 'medium', 'large', 'extra')!default;
+
+$use-grids:         false!default;
+$use-flexbox:       false!default;
+$use-columns:       false!default;
+$use-nav:           true!default;
+$use-options:       false!default;
+$use-pagination:    false!default;
+$use-breadcrumb:    false!default;
+$use-media:         true!default;
+$use-marginalia:    false!default;
+$use-island:        true!default;
+$use-block-list:    false!default;
+$use-matrix:        false!default;
+$use-split:         true!default;
+$use-this-or-this:  true!default;
+$use-link-complex:  false!default;
+$use-flyout:        false!default;
+$use-arrows:        false!default;
+$use-sprite:        false!default;
+$use-icon-text:     false!default;
+$use-beautons:      false!default;
+$use-lozenges:      false!default;
+$use-rules:         true!default;
+$use-stats:         false!default;
+$use-greybox:       false!default;
